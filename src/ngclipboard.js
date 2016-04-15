@@ -1,19 +1,9 @@
 (function() {
     'use strict';
-    var MODULE_NAME = 'ngclipboard';
-    var angular, Clipboard;
-    
-    // Check for CommonJS support
-    if (typeof module === 'object' && module.exports) {
-      angular = require('angular');
-      Clipboard = require('clipboard');
-      module.exports = MODULE_NAME;
-    } else {
-      angular = window.angular;
-      Clipboard = window.Clipboard;
-    }
+    var angular = window.angular;
+    var Clipboard = window.Clipboard;
 
-    angular.module(MODULE_NAME, []).directive('ngclipboard', function() {
+    angular.module('ngclipboard', []).directive('ngclipboard', function() {
         return {
             restrict: 'A',
             scope: {
