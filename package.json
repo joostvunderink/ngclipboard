@@ -1,6 +1,6 @@
 {
     "name": "ngclipboard",
-    "version": "1.1.5",
+    "version": "1.1.6",
     "description": "Angularjs directive for clipboard.js",
     "keywords": [
         "ngclipboard",
@@ -23,7 +23,7 @@
         "type": "git",
         "url": "git@github.com:sachinchoolur/ngclipboard.git"
     },
-    "main": "dist/ngclipboard.js",
+    "main": "src/ngclipboard.js",
     "license": "MIT",
     "scripts": {
         "test": "grunt"
